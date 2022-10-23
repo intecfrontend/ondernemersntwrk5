@@ -30,7 +30,7 @@ function Inputfield(props) {
           name="BladQuery"
           onChange={handleChange}
           value={BladQuery}
-          className="ONntwk__input" placeholder={placeholder} type="text" />
+          className="ONntwk__input" placeholder="Kies" type="text" />
         <Link className="ONntwk__sidebutton" to={`${linker}${BladQuery}`}>
 
 

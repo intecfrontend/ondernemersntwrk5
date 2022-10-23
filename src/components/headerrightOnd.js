@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../App.css"
 import identity from "../assets/magitems/idbdigit.png"
 import digit from "../assets/magitems/digit.svg"
 import exit from "../assets/magitems/exit.svg"
 import savelogo from "../components/MagazineItems/magazines_assets/savelogo.svg"
-
+import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 // import axios from 'axios'
+
 
 const UitschuifConsu = styled.div`
 width: 215px;
@@ -18,8 +19,16 @@ z-index:999;
 padding: 5px 0px 0px 0px; 
 top: 45px; 
 left: calc(100vw - 268px);
-border-radius: 0  0 5px 5px
+border-radius: 0  0 5px 5px;
+transition: 2s all ease;
+display: block;
+display: ${(props) => props.display}
 `;
+
+/* const theme = {
+  height: "0px",
+} */
+
 const Iddiv = styled.div`
 width: 215px;
 height: auto;
@@ -60,7 +69,12 @@ object-fit: cover;
 font-size:10px;
 `;
 
-function Headerright(props) {
+function Headerright({ toggleTheme }) {
+  const [isToggled, setIsToggled] = useState(false);
+  const onToggle = () => {
+    setIsToggled(!isToggled);
+    toggleTheme()
+  };
 
 
   return (
@@ -71,17 +85,18 @@ function Headerright(props) {
         </div>
         <div className="ONntwk__bluecardbtn ONntwk__btncontaanmelden">
           <div className="ONntwk__bluecardbtn ONntwk__regularbtn">
+            <div type="checkbox" checked={isToggled} onChange={onToggle}>
 
-            IdentityBuilding
-            <LogoOndXs src={identity} alt="fotoconsument" />
-
+              IdentityBuilding
+              <LogoOndXs src={identity} alt="fotoconsument" />
+            </div>
 
           </div>
         </div>
 
 
 
-        <UitschuifConsu>
+        <UitschuifConsu display="none" >
           <Iddiv>
             <Fotoconsument src={identity} alt="fotoconsument" />
             <div> <strong>IdentityBuilding</strong><br />

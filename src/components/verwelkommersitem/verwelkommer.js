@@ -55,7 +55,7 @@ border:black solid 1px;
 border-radius: 5px;
 font-size: 10px;
 font-weight: 600;
-/* color: #1394d2; */
+color: #1394d2;
 width: 140px;
 height: 25px;
 margin: 5px;
@@ -179,7 +179,7 @@ function verwelkommer() {
           <BlueBtn>IK BEN ONDERNEMER </BlueBtn>
         </Link>
         <Link to="/consumentmag">
-        <WhiteBtn>IK BEN CONSUMENT</WhiteBtn>
+          <WhiteBtn>IK BEN CONSUMENT</WhiteBtn>
         </Link>
       </BtnWrapper>
 

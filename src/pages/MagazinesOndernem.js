@@ -1,6 +1,4 @@
 import HeaderInputOnd from '../components/headerInputOnd';
-
-import HeaderInput from '../components/headerInput';
 import MagazinesCardsContainer from '../components/MagazineItems/Item-magazineCont'
 import MagazinesSideleft from '../components/MagazineItems/MagazinesSideleft'
 
