@@ -5,6 +5,13 @@
   --boxshadow: rgba(99, 99, 99, 0.7) 2px 2px 8px 0px;
   --achtergrond: #f1f2f2;
 }
+
+.ONntwk__LinkHeaderLogo {
+  width: calc(100px + 10vw);
+  display: flex;
+  align-items: center
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
@@ -186,7 +193,8 @@
 
   left: 30vw;
   z-index: 990;
-}.ONntwk__inputwrapper {
+}
+.ONntwk__inputwrapper {
   display: flex;
   justify-content: center;
   height: auto;
@@ -251,7 +259,7 @@
   position: absolute;
   background: var(--achtergrond);
   left: calc(50vw - 220px);
-  top:10px;
+  top: 10px;
 }
 .ONntwk__catLogo {
   display: block;

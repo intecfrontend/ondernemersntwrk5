@@ -7,9 +7,9 @@ export default function header() {
   return (
     <div>
       <div className="ONntk__header">
-
-        <img src={ONcatnetwerklogo} alt="ONlogo" className="ONntwk__headerONcatLogo" />
-
+        <Link className="ONntwk__LinkHeaderLogo" to="/">
+          <img src={ONcatnetwerklogo} alt="ONlogo" className="ONntwk__headerONcatLogo" />
+        </Link>
         <div className="ONntwk__buttonHeaderwrapper ">
           <div className="ONntwk__bluecardbtn ONntwk__btncont">
             <div className="ONntwk__bluecardbtn ONntwk__regularbtn">ALLE NETWERKEN </div>
