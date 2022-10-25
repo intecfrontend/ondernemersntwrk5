@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import ONnetwerklogo from "../../assets/ONnetwerk.svg"
 import eyes from "./eyeIcon.svg"
+import closeX from "./closeX.svg"
 import { Link } from 'react-router-dom'
 
 
@@ -9,6 +10,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+position: absolute;
 width: 500px;
 height: 700px;
 margin: 40px 0px 0px 0px;
@@ -165,10 +167,21 @@ left: 77%;
 position: absolute;
 width: 20%
 `;
+const CloseX = styled.img`
+cursor: pointer;
+
+top: 2%;
+left: 92%;
+position: absolute;
+width: 5%
+/* &:hover {scale: 10%} */
+`;
 
 function verwelkommer() {
   return (
     <Container>
+      <CloseX src={closeX} alt="" />
+
       <ONlogo src={ONnetwerklogo} alt="ONlogo" />
 
       <TxtWrapper>
