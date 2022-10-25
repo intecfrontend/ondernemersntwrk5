@@ -9,7 +9,7 @@
 .ONntwk__LinkHeaderLogo {
   width: calc(100px + 10vw);
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
@@ -136,6 +136,10 @@
 }
 .ONntwk__btncont {
   border: var(--blue) solid 1px;
+}
+.ONntwk__gaterug {
+  color: var(--blue);
+  display: flex;; align-items: center;
 }
 .ONntwk__btncontaanmelden {
   border: var(--blue) solid 1px;

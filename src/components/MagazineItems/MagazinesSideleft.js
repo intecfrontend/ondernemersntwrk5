@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import cornericon from "./cornericon.svg"
 import ADlogo from "./magazines_assets/adlogo.png"
+import { Link } from 'react-router-dom'
 
 
 const Container = styled.div`
@@ -79,9 +80,14 @@ export default function MagazinesSideleft() {
     <>
       <Container>
         <div className="ONntwk__bluecardnobg">
-          <span>
-            <img className="ONntwk__cornericonleft" src={cornericon} alt="cornericon" />
-          </span> GA TERUG
+          <Link className="ONntwk__gaterug" to="/search">
+
+            <span>
+              <img className="ONntwk__cornericonleft" src={cornericon} alt="cornericon" />
+            </span>
+            GA TERUG
+          </Link >
+
         </div>
         <ADlogosetter>
           <ADlogowrap src={ADlogo} alt="ADlogo" />
